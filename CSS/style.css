@@ -13,3 +13,7 @@
 header {
     position: fixed;
 }
+nav ul {
+    display: inline-flex;
+}
+
