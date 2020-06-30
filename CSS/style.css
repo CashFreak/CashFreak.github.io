@@ -3,18 +3,47 @@
     padding: 0px;
 }
 
+body {
+    font-family: sans-serif;
+} 
+
 .topContainer {
     background-image: url("background1.jpg");
     background-repeat: no-repeat;
-    height: 600px;
+    height: 800px;
     background-size: cover;
 }
 
-header {
-    position: fixed;
-}
-nav ul li {
-    display: inline-flex;
-    margin: 5 5 5 5;
+.wrapper {
+   width: 100%;
+   background-color: rgb(22, 21, 21);
+   position: fixed;
+   border-bottom: solid 2px rgb(46, 46, 46);
+   opacity: 0,2;
 }
 
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    
+}
+
+nav {
+    text-align: right;
+    line-height: 60px;
+}
+
+nav a {
+    margin: 5 10 5 5;
+    text-decoration: none;
+    color: whitesmoke;
+}
