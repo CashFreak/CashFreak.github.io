@@ -108,6 +108,7 @@ div nav a:hover:before, div nav a:hover:after
     transform: translateY(0px);
 }
 
+/* Gallery + animation on hover */
 .image-gallery {
     width: 80%;
     display: flex;
@@ -116,7 +117,6 @@ div nav a:hover:before, div nav a:hover:after
     margin: 20 auto 40 auto;
 }
 
-/* Gallery + animation on hover */
 .image-gallery figure {
   width: 400px;
   height: 250px;
@@ -139,7 +139,7 @@ div nav a:hover:before, div nav a:hover:after
 }
 
 /* Team-photos + text on hover animation */
-#middle-section {
+#lower-section {
     margin: 30 0 100 0;
     display: inline-flex;
     justify-content: center;
@@ -241,6 +241,7 @@ figure.team-member p {
     transform: translate3d(0%, -50%, 0);
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
+    padding-top: 55px;
 }
   
 figure.team-member:hover img {
@@ -270,4 +271,100 @@ figure.team-member:hover figcaption::before {
     opacity: 1;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
+}
+  
+/* contacts section, social media icons and hover animations */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacts-section-icons {
+    width: 350px;
+    display:inline-flex;
+    margin: 0 auto;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons  {
+    vertical-align: top;
+    display: inline;
+    
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-instagram:hover {
+    background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-github:hover {
+    background-color: #5a32a3;
 }
