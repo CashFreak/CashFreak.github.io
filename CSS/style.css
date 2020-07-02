@@ -20,13 +20,20 @@ h2 {
 }
 
 h3 {
-    margin-top: 60px;
+    margin-top: 100px;
     text-align: center;
     color: black;
     font-size: 40px;  
 }
 
 h4 {
+    margin-top: 130px;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+h5{
     margin-top: 130px;
     text-align: center;
     color: black;
@@ -274,12 +281,16 @@ figure.team-member:hover figcaption::before {
 }
   
 /* contacts section, social media icons and hover animations */
+.fab {
+    margin: 15px 10px;
+}
+
 a {
     text-decoration: none;
     color: #fff;
 }
 
-.contacts-section-icons {
+.contact-section {
     width: 350px;
     display:inline-flex;
     margin: 0 auto;
@@ -289,11 +300,13 @@ a {
     color: #fff;
 }
 
-ul.social-icons {
-    margin-top: 10px;
+.social-icons {
+    font-size: 14px;
+    float: right;
+    margin: 10px 10px;
 }
 
-.social-icons  {
+.social-icons {
     vertical-align: top;
     display: inline;
     
@@ -367,4 +380,48 @@ ul.social-icons {
 }
 .fa-github:hover {
     background-color: #5a32a3;
+}
+
+/*map + description */
+.location {
+    margin: 50px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-box {
+    margin-right: 10px;
+    font-size: 26px;
+    width: 600px;
+}
+
+.e-mail {
+    text-decoration: underline;
+    color: black;
+}
+
+.contacts {
+margin: 10px 10px;
+}
+
+/* footer */
+
+footer {
+    color: whitesmoke;
+    opacity: .9;
+    background-color: black;
+    font-size: 14px;
+    text-align: center;
+    height: 83px;
+}
+
+.copyright {
+    font-size: 14px;
+    padding: 20px 7px;
+    text-align: left;
+}
+
+.unsplash {
+    text-decoration: underline;
 }
