@@ -20,14 +20,14 @@ h2 {
 }
 
 h3 {
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
     color: black;
     font-size: 40px;  
 }
 
 h4 {
-    margin-top: 130px;
+    margin-top: 80px;
     text-align: center;
     color: black;
     font-size: 40px;
@@ -43,7 +43,7 @@ h5{
 .background-image {
     background-image: url("background1.jpg");
     background-repeat: no-repeat;
-    height: 710px;
+    height: 720px;
     background-size: cover;
 }
 
@@ -123,7 +123,7 @@ div nav a:hover:before, div nav a:hover:after
 }
 
 .image-gallery {
-    margin-top: 30px;
+    margin: 50 0;
     display: grid;
     grid-template-rows: repeat(4, 15vh);
     grid-template-columns: repeat(4, 15vw);
@@ -153,7 +153,7 @@ div nav a:hover:before, div nav a:hover:after
     top: 0;
     transition: all 0.15s cubic-bezier(0.3, 0.1, 0.3, 0.85);
     position: relative;
-    box-shadow: 0 0 0 #0000;
+    
   }
   .climber:first-child {
     border-radius: 10px 10px 0 0;
@@ -188,8 +188,8 @@ div nav a:hover:before, div nav a:hover:after
     z-index: 1;
     transition: all 0.3s cubic-bezier(0.3, 0.1, 0.3, 0.85);
     border-radius: 3px;
-    width: 500%;
-    height: 500%;
+    width: 300%;
+    height: 300%;
     left: -100%;
     top: -100%;
   }
@@ -228,14 +228,13 @@ div nav a:hover:before, div nav a:hover:after
       top: -100%;
     }
     .climber:hover ~ img {
-      left: 100%;
+      left: 0%;
     }
   }
   
-
 /* Team-photos + text on hover animation */
 #lower-section {
-    margin: 30 0 100 0;
+    margin: 50 0 0 0;
     display: inline-flex;
     justify-content: center;
 }
@@ -367,7 +366,49 @@ figure.team-member:hover figcaption::before {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
-  
+
+.quote {
+    margin: 80px auto;
+    width: 640px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.author {
+    font-style: normal;
+    font-size: 25px;
+    text-align: right;  
+}
+
+@media only screen and (max-width: 1065px) and (min-width: 300px) {
+#lower-section {
+    flex-wrap: wrap;
+}
+}
+
+/* About us section*/
+.About {
+    background-color: black;
+    opacity: .8;
+    margin: 60 auto;
+    width: 65%;
+}
+
+.about-text {
+    padding: 40 40;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.about-tittle {
+    margin-top: 160px;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+
 /* contacts section, social media icons and hover animations */
 .fab {
     margin: 15px 10px;
@@ -440,9 +481,7 @@ a {
     background-color: #322f30;
 }
 .fa-instagram:hover {
-    background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    background: rgb(240, 11, 144);
 }
 
 .fa-linkedin {
@@ -472,7 +511,7 @@ a {
 
 /*map + description */
 .location {
-    margin: 50px 30px;
+    margin: 45px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -490,7 +529,7 @@ a {
 }
 
 .contacts {
-margin: 10px 10px;
+    margin: 10px 10px;
 }
 
 /* footer */
@@ -513,5 +552,3 @@ footer {
 .unsplash {
     text-decoration: underline;
 }
-
-
