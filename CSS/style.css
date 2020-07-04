@@ -6,6 +6,7 @@
 body {
     font-family: sans-serif;
     background-color: rgb(233, 233, 233);
+    
 } 
 
 h2 {
@@ -17,6 +18,20 @@ h2 {
     background-color: black;
     opacity: .7;
     padding: 25 25;
+}
+
+@media (max-width: 710px) {
+    h2 {
+        margin-top: 450px;
+        font-size: 35;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        margin-top: 500px;
+        font-size: 25px;
+    }
 }
 
 h3 {
@@ -41,9 +56,10 @@ h5{
 }
 
 .background-image {
+    max-width: 100%;
     background-image: url("background1.jpg");
     background-repeat: no-repeat;
-    height: 720px;
+    height: 753px;
     background-size: cover;
 }
 
@@ -56,6 +72,7 @@ h5{
    opacity: .9;
    z-index: 5;
 }
+
 /* logo */
 .logo {
     position: absolute;   
@@ -70,6 +87,33 @@ h5{
     color: whitesmoke;
 }
 
+.smaller-logo {
+    position: absolute;   
+    line-height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    
+}
+
+.smaller-logo a {
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 870px){
+    .smaller-logo a {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 870px){
+    .logo a {
+        visibility: hidden;
+    }
+}
+
 /* nav bar + animation on hover */
 nav {
     text-align: right;
@@ -79,7 +123,7 @@ nav {
 nav a {
     font-size: 20px;
     position: relative;
-    padding: 13px 13px;
+    padding: 13 13;
     margin: 5 10 5 5;
     text-decoration: none;
     color: whitesmoke;
@@ -115,6 +159,20 @@ div nav a:hover:before, div nav a:hover:after
     transform: translateY(0px);
 }
 
+@media only screen and (max-width: 750px){
+    nav a {
+        padding: 0 0;
+        margin: 2 10 2 2;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    nav a {
+        font-size: 12px;
+    }
+}
+
 /* Gallery + animation on hover */
 #middle-section{
     display: flex;
@@ -132,13 +190,15 @@ div nav a:hover:before, div nav a:hover:after
     padding: 0.25em;
     cursor: zoom-in;
   }
-  @media (min-width: 40em) {
+
+  @media (min-width: 640px) {
     .gallery {
       grid-template-columns: repeat(5, 18vw);
       grid-template-rows: repeat(2, 20vh);
     }
   }
-  @media (min-width: 60em) {
+
+  @media (min-width: 960px) {
     .gallery {
       grid-template-columns: repeat(10, 8vw);
       grid-template-rows: 25vh;
@@ -155,34 +215,43 @@ div nav a:hover:before, div nav a:hover:after
     position: relative;
     
   }
+
   .climber:first-child {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10 10 0 0;
   }
+
   .climber:last-child {
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10 10;
   }
-  @media (min-width: 40em) and (max-width: 59.99em) {
+
+  @media (min-width: 640px) and (max-width: 959px) {
     .climber:first-child {
-      border-radius: 10px 0 0 0;
+      border-radius: 10 0 0 0;
     }
+
     .climber:nth-child(5) {
-      border-radius: 0 10px 0 0;
+      border-radius: 0 10 0 0;
     }
+
     .climber:nth-child(6) {
-      border-radius: 0 0 10px 0;
+      border-radius: 0 0 10 0;
     }
+
     .climber:last-child {
-      border-radius: 0 0 0 10px;
+      border-radius: 0 0 0 10;
     }
   }
-  @media (min-width: 60em) {
+
+  @media (min-width: 960px) {
     .climber:first-child {
-      border-radius: 10px 0 0 10px;
+      border-radius: 10 0 0 10;
     }
+
     .climber:last-child {
-      border-radius: 0 10px 10px 0;
+      border-radius: 0 10 10 0;
     }
   }
+
   .climber:hover {
     opacity: 1;
     z-index: 1;
@@ -193,7 +262,8 @@ div nav a:hover:before, div nav a:hover:after
     left: -100%;
     top: -100%;
   }
-  @media (min-width: 40em) {
+
+  @media (min-width: 640px) {
     .climber:hover {
       width: 250%;
       height: 500%;
@@ -201,7 +271,8 @@ div nav a:hover:before, div nav a:hover:after
       top: -200%;
     }
   }
-  @media (min-width: 40em) and (orientation: portrait) {
+
+  @media (min-width: 640px) and (orientation: portrait) {
     .climber:hover {
       width: 300%;
       height: 300%;
@@ -209,7 +280,8 @@ div nav a:hover:before, div nav a:hover:after
       top: -100%;
     }
   }
-  @media (min-width: 60em) {
+
+  @media (min-width: 960px) {
     .climber:hover {
       width: 350%;
       height: 150%;
@@ -220,13 +292,15 @@ div nav a:hover:before, div nav a:hover:after
       left: 175%;
     }
   }
-  @media (min-width: 60em) and (orientation: landscape) {
+
+  @media (min-width: 960px) and (orientation: landscape) {
     .climber:hover {
       width: 300%;
       height: 300%;
       left: -75%;
       top: -100%;
     }
+
     .climber:hover ~ img {
       left: 0%;
     }
@@ -234,9 +308,10 @@ div nav a:hover:before, div nav a:hover:after
   
 /* Team-photos + text on hover animation */
 #lower-section {
-    margin: 50 0 0 0;
-    display: inline-flex;
+    margin: 50 auto;
+    display: flex;
     justify-content: center;
+    
 }
 
 figure.team-member {
@@ -299,7 +374,7 @@ figure.team-member figcaption::before {
 figure.team-member h2,
 figure.team-member p {
     margin: 0;
-    padding: 30px 35px;
+    padding: 30 35;
     opacity: 0;
     position: absolute;
     height: 100%;
@@ -381,14 +456,19 @@ figure.team-member:hover figcaption::before {
     text-align: right;  
 }
 
-@media only screen and (max-width: 1065px) and (min-width: 300px) {
-#lower-section {
-    flex-wrap: wrap;
-}
+@media only screen and (max-width: 1150px) and (min-width: 300px) {
+    #lower-section {
+        flex-wrap: wrap;
+        width: 70%;
+    }
 }
 
 /* About us section*/
-.About {
+.about-section {
+    margin-top: 155px;
+}
+
+.about {
     background-color: black;
     opacity: .8;
     margin: 60 auto;
@@ -408,21 +488,92 @@ figure.team-member:hover figcaption::before {
     font-size: 40px;
 }
 
+@media only screen and (max-width: 800px){
+    .about-text {
+        font-size: 20px;
+        padding: 15 15;
+    }
+    .about {
+        width: 90%;
+    }
+    .quote {
+        width: 70%;
+    }
+}
 
-/* contacts section, social media icons and hover animations */
+@media only screen and (max-width: 800px){
+    .text-box {
+        width: 300px;
+        font-size: 19px;
+    }
+    .e-mail {
+        font-size: 19px;
+    }
+}
+
+/* contacts section */
+.contact-section {
+    width: 350px;
+    display:inline-flex;
+    margin: 0 auto;
+}
+
+/*map + description */
+.location {
+    margin: 45 20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.map {
+    width: 450px;
+    height: 450px;
+}
+
+.text-box {
+    margin-right: 10px;
+    font-size: 26px;
+    width: 600px;
+}
+
+.e-mail {
+    text-decoration: underline;
+    color: black;
+}
+
+.contacts {
+    margin: 10 10;
+}
+
+/* footer, social media icons and hover animations*/
+
+footer {
+    color: whitesmoke;
+    opacity: .9;
+    background-color: black;
+    font-size: 14px;
+    text-align: center;
+    height: 83px;
+}
+
+.copyright {
+    font-size: 14px;
+    padding: 33 20;
+    text-align: left;
+}
+
+.unsplash {
+    text-decoration: underline;
+}
+
 .fab {
-    margin: 15px 10px;
+    margin: 15 10;
 }
 
 a {
     text-decoration: none;
     color: #fff;
-}
-
-.contact-section {
-    width: 350px;
-    display:inline-flex;
-    margin: 0 auto;
 }
 
 .social-icon {
@@ -432,13 +583,12 @@ a {
 .social-icons {
     font-size: 14px;
     float: right;
-    margin: 10px 10px;
+    margin: 10 10;
 }
 
 .social-icons {
     vertical-align: top;
     display: inline;
-    
 }
 
 .social-icons a {
@@ -455,11 +605,13 @@ a {
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-facebook:hover {
     background-color: #3d5b99;
 }
+
 .fa-twitter {
-    padding:10px 12px;
+    padding:10 12;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -467,12 +619,13 @@ a {
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-twitter:hover {
     background-color: #00aced;
 }
 
 .fa-instagram {
-    padding:10px 14px;
+    padding:10 14;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -480,6 +633,7 @@ a {
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-instagram:hover {
     background: rgb(240, 11, 144);
 }
@@ -493,11 +647,13 @@ a {
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-linkedin:hover {
     background-color: #0073a4;
 }
+
 .fa-github {
-    padding:10px 14px;
+    padding:10 14;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -505,50 +661,35 @@ a {
     transition: .5s;
     background-color: #322f30;
 }
+
 .fa-github:hover {
     background-color: #5a32a3;
 }
 
-/*map + description */
-.location {
-    margin: 45px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+@media only screen and (max-width: 600px){
+    footer {
+        height: 150px;
+    }
 }
 
-.text-box {
-    margin-right: 10px;
-    font-size: 26px;
-    width: 600px;
+@media only screen and (max-width: 375px) {
+    .copyright {
+        font-size: 24px;
+    }
+    footer {
+        height: 200px;
+    }
 }
 
-.e-mail {
-    text-decoration: underline;
-    color: black;
-}
-
-.contacts {
-    margin: 10px 10px;
-}
-
-/* footer */
-
-footer {
-    color: whitesmoke;
-    opacity: .9;
-    background-color: black;
-    font-size: 14px;
-    text-align: center;
-    height: 83px;
-}
-
-.copyright {
-    font-size: 14px;
-    padding: 33px 20px;
-    text-align: left;
-}
-
-.unsplash {
-    text-decoration: underline;
+@media only screen and (min-width: 400px) and (max-width: 420px) {
+    .copyright {
+        font-size: 20px;
+        height: 100px;
+    }
+   footer {
+       height: 170px;
+   }
+   .social-icons {
+       width: 100%;
+   }
 }
