@@ -57,7 +57,7 @@ h5{
 
 .background-image {
     max-width: 100%;
-    background-image: url("background1.jpg");
+    background-image: url("/css/background1.jpg");
     background-repeat: no-repeat;
     height: 753px;
     background-size: cover;
