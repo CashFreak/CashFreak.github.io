@@ -1,2 +1,3 @@
 # Climbing-Dream-Studious
-HTML, CSS, FlexBox design for a climbing website
+HTML, CSS, FlexBox, Grid
+design for a climbing website
