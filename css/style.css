@@ -57,7 +57,7 @@ h5{
 
 .background-image {
     max-width: 100%;
-    background-image: url("/css/background1.jpg");
+    background-image: url("background1.jpg");
     background-repeat: no-repeat;
     height: 753px;
     background-size: cover;
@@ -340,7 +340,7 @@ div nav a:hover:before, div nav a:hover:after
   }
   
 /* Team-photos + text on hover animation */
-#lowerSection {
+#lower-section {
     margin: 50 auto;
     display: flex;
     justify-content: center;
