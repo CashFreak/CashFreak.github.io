@@ -207,7 +207,7 @@ div nav a:hover:before, div nav a:hover:after
 }
 
 /* Gallery + animation on hover */
-#middle-section{
+#middleSection{
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -340,7 +340,7 @@ div nav a:hover:before, div nav a:hover:after
   }
   
 /* Team-photos + text on hover animation */
-#lower-section {
+#lowerSection {
     margin: 50 auto;
     display: flex;
     justify-content: center;
