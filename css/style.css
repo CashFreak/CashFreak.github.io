@@ -63,6 +63,39 @@ h5{
     background-size: cover;
 }
 
+.background-mobile {
+    visibility: hidden;
+    max-width: 100%;
+    background-image: url("background-mobile.jpg");
+    background-repeat: no-repeat;
+    height: 753px;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 870px) {
+    .background-image {
+        visibility: hidden;
+    }
+    .background-mobile {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .background-mobile {
+        height: 670px;
+    }
+    h2 {
+        margin-top: 390px;
+    }
+}
+
+@media only screen and (max-height: 570px) {
+    h2 {
+        margin-top: 310px;
+    }
+}
+
 /* Fixed header */
 .fixed-header {
    width: 100%;
@@ -307,7 +340,7 @@ div nav a:hover:before, div nav a:hover:after
   }
   
 /* Team-photos + text on hover animation */
-#lower-section {
+#lowerSection {
     margin: 50 auto;
     display: flex;
     justify-content: center;
